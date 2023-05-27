@@ -1,0 +1,71 @@
+### Hi there 👋
+
+<!--
+**Driphacker01/Driphacker01** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
+
+```
+class TradingBroker:
+
+    def __init__(self, name, commission_rate):self.name = name
+        self.commission_rate = commission_rate
+        self.portfolio = {}
+
+    def buy_stock(self, symbol, quantity, price):
+        total_cost = quantity * price
+        commission_cost = total_cost * self.commission``` 
+        self.name = name
+        self.commission_rate = commission_rate
+        self.balance = 0
+        self.stocks = {}
+        self.transactions = []
+
+    def buy(self, stock_name, quantity, price):
+        transaction_amount = quantity * price
+        transaction_fee = transaction_amount * self.commission_rate
+        total_cost = transaction_amount + transaction_fee
+
+        if total_cost > self.balance:
+            return "Insufficient balance"
+        
+        if stock_name in self.stocks:
+            self.stocks[stock_name] += quantity
+        else:
+            self.stocks[stock_name] = quantity
+        
+        self.balance -= total_cost
+        self.transactions.append(f"Bought {quantity} shares of {stock_name} at {price} per share for a total cost of {total_cost}")
+
+    def sell(self, stock_name, quantity, price):
+        if stock_name not in self.stocks or self.stocks[stock_name] < quantity:
+            return "Insufficient stocks"
+
+        transaction_amount = quantity * price
+        transaction_fee = transaction_amount * self.commission_rate
+        total_revenue = transaction_amount - transaction_fee
+
+        self.stocks[stock_name] -= quantity
+        self.balance += total_revenue
+        self.transactions.append(f"Sold {quantity} shares of {stock_name} at {price} per share for a total revenue of {transaction_amount}")
+
+    def get_portfolio(self):
+        return self.stocks
+
+    def get_balance(self):
+        return self.balance
+
+    def get_transactions(self):
+        return self.transactions
+```
+ `TradingBroker`
