@@ -1,0 +1,442 @@
+[
+	{
+	pair: "BTCTRY",
+	high: 20950,
+	last: 20659.95,
+	timestamp: 1508242980,
+	bid: 20556.51,
+	volume: 142.95,
+	low: 20500,
+	ask: 20659.95,
+	open: 20830,
+	average: 20761.68
+	},
+	{
+	pair: "ETHBTC",
+	high: 0,
+	last: 0,
+	timestamp: 1508242980,
+	bid: 0.06,
+	volume: 0,
+	low: 0,
+	ask: 0.0635,
+	open: 0,
+	average: 0
+	},
+	{
+	pair: "ETHTRY",
+	high: 1274,
+	last: 1227.99,
+	timestamp: 1508242980,
+	bid: 1210,
+	volume: 757.85,
+	low: 1210,
+	ask: 1227.99,
+	open: 1265.99,
+	average: 1238.73
+	}
+]  "asks":[["767.48","0.12456411"],["767.49","4.07185043"]]
+
+
+
+Turn Any Question to {Code}.
+BLACKBOX  is your  AI-Powered Coding Assistant so you can {Code} 10X Faster and Better
+Code of a trading broker
+Tip: Make sure to specify the language at the end of your question
+"how to write a for loop in python "
+Result 1
+Result:
+1
+[
+2
+    {
+3
+    pair: "BTCTRY",
+4
+    high: 20950,
+5
+    last: 20659.95,
+6
+    timestamp: 1508242980,
+7
+    bid: 20556.51,
+8
+    volume: 142.95,
+9
+    low: 20500,
+10
+    ask: 20659.95,
+11
+    open: 20830,
+12
+    average: 20761.68
+13
+    },
+14
+    {
+15
+    pair: "ETHBTC",
+16
+    high: 0,
+17
+    last: 0,
+18
+    timestamp: 1508242980,
+19
+    bid: 0.06,
+20
+    volume: 0,
+21
+    low: 0,
+22
+    ask: 0.0635,
+23
+    open: 0,
+24
+    average: 0
+25
+    },
+26
+    {
+27
+    pair: "ETHTRY",
+28
+    high: 1274,
+29
+    last: 1227.99,
+30
+    timestamp: 1508242980,
+31
+    bid: 1210,
+32
+    volume: 757.85,
+33
+    low: 1210,
+34
+    ask: 1227.99,
+35
+    open: 1265.99,
+36
+    average: 1238.73
+37
+    }
+38
+]
+Result:
+1
+{
+2
+  "timestamp":1439279819.0,
+3
+  "bids":[["761.68","1.17474867"],["761.67","0.23928215"]],
+4
+  "asks":[["767.48","0.12456411"],["767.49","4.07185043"]]
+5
+}
+Result:
+1
+[
+2
+    {
+3
+     "date": 1439280491.0,
+4
+     "tid": "55c9ad6b1ac4dc12b06131dc",
+5
+     "price":767.47,
+6
+     "amount":0.06486361
+7
+    },
+8
+    {
+9
+     "date": 1439280491.0,
+10
+     "tid": "55c9ad6b1ac4dc12b06131dc",
+11
+     "price":767.47,
+12
+     "amount":0.06486361
+13
+    } 
+14
+  ]
+Result:
+1
+[
+2
+    {
+3
+     "Date":"2016-05-18T00:00:00",
+4
+     "Open":1367.01,
+5
+     "High":1375.61,
+6
+     "Low":1362.61,
+7
+     "Close":1375.61,
+8
+     "Volume":125.17664557,
+9
+     "Average":1371.06,
+10
+     "DailyChangeAmount":0.63,
+11
+     "DailyChangePercentage":8.6
+12
+    },
+13
+    {
+14
+     "Date":"2016-05-17T00:00:00",
+15
+     "Open":1365.13,
+16
+     "High":1379.8,
+17
+     "Low":1365.01,
+18
+     "Close":1371.0,
+19
+     "Volume":541.47093778,
+20
+     "Average":1373.57,
+21
+     "DailyChangeAmount":0.43,
+22
+     "DailyChangePercentage":5.87
+23
+    } 
+24
+  ]
+Example (C#):
+1
+string message = yourAPIKey + nonce;
+2
+using (HMACSHA256 hmac = new HMACSHA256(Convert.FromBase64String(yourPrivateKey)))
+3
+{
+4
+   byte[] signatureBytes = hmac.ComputeHash(Encoding.UTF8.GetBytes(message));
+5
+   string X-Signature = Convert.ToBase64String(signatureBytes);
+6
+}
+Example (C#):
+1
+client.DefaultRequestHeaders.Add("X-PCK", yourAPIKey);
+2
+client.DefaultRequestHeaders.Add("X-Stamp", nonce.ToString());
+3
+client.DefaultRequestHeaders.Add("X-Signature", signature);
+Result:
+1
+{
+2
+    "try_balance": 1000,
+3
+    "btc_balance": 0.84053883,
+4
+    "eth_balance": 0.0660681,
+5
+    "try_reserved": 1003.54,
+6
+    "btc_reserved": 0,
+7
+    "eth_reserved": 0,
+8
+    "try_available": 1000,
+9
+    "btc_available": 0.84053883,
+10
+    "eth_available": 0.0660681,
+11
+    "btctry_taker_fee_percentage": 0.005,
+12
+    "btctry_maker_fee_percentage": 0.002,
+13
+    "ethtry_taker_fee_percentage": 0.005,
+14
+    "ethtry_maker_fee_percentage": 0.002,
+15
+    "ethbtc_taker_fee_percentage": 0.004,
+16
+    "ethbtc_maker_fee_percentage": 0.001
+17
+}
+Result:
+1
+[
+2
+  {
+3
+    "id":"123456",
+4
+    "date":"2015-08-11T11:40:17.278",
+5
+    "operation":"buy",
+6
+    "amount":1.9449023,
+7
+    "currency":"TRY",
+8
+    "price":734.52,
+9
+    "funds":10,
+10
+    "fee" : 0.005,
+11
+    "tax" : 0.18
+12
+  },
+13
+  {
+14
+    "id":"123456",
+15
+    "date":"2015-08-11T11:40:17.325",
+16
+    "operation":"commission",
+17
+    "amount":0.0,
+18
+    "currency":"TRY",
+19
+    "price":0.0,
+20
+    "funds":10,
+21
+    "fee" : 0.005,
+22
+    "tax" : 0.18
+23
+  },
+24
+  {
+25
+    "id":"123456",
+26
+    "date":"2015-08-11T11:44:10.162",
+27
+    "operation":"sell",
+28
+    "amount":-2.18674928,
+29
+    "currency":"BTC",
+30
+    "price":737.71,
+31
+    "funds":10,
+32
+    "fee" : 0.005,
+33
+    "tax" : 0.18
+34
+  },
+35
+  {
+36
+    "id":"123456",
+37
+    "date":"2015-08-11T11:44:10.209",
+38
+    "operation":"commission",
+39
+    "amount":0.0,
+40
+    "currency":"BTC",
+41
+    "price":0.0,
+42
+    "funds":10,
+43
+    "fee" : 0.005,
+44
+    "tax" : 0.18
+45
+  }
+46
+]
+Result:
+1
+[
+2
+  {
+3
+    "id":"123654",
+4
+    "datetime":"2015-07-28T04:43:00.271Z",
+5
+    "type":"SellBtc",
+6
+    "price":820.02,
+7
+    "amount":4.65915461,
+8
+    "PairSymbol" : "BTCTRY"
+9
+  },
+10
+  {
+11
+    "id":"123657",
+12
+    "datetime":"2015-07-30T10:01:39.619Z",
+13
+    "type":"BuyBtc",
+14
+    "price":790.61,
+15
+    "amount":10.42124175,
+16
+    "PairSymbol" : "BTCTRY"
+17
+  },
+18
+]
+Result:
+1
+{
+2
+  "result":true
+3
+}
+Result:
+1
+{
+2
+  "id":"123753",
+3
+  "datetime":"2015-08-11T10:37:44.4786271Z",
+4
+  "type":"Buy",
+5
+  "price":739.16,
+6
+  "amount":2.77891473
+7
+}
+Result:
+1
+{
+2
+  "id":"147852",
+3
+  "datetime":"2015-08-11T10:37:44.4786271Z",
+4
+  "type":"Sell",
+5
+  "price":739.16,
+6
+  "amount":2.77891473
+7
+}
+Source: https://github.com/BTCTrader/broker-api-docs
+
+
+
+
+
+
